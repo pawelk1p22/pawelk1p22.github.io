@@ -1,0 +1,96 @@
+body {
+  background-color: #181818;
+  margin: 0;
+}
+
+body * {
+  font-family: "Fira Code", monospace;
+  color: #0bf71b;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 150px auto;
+  grid-template-areas: "header" "main";
+  min-height: 100vh;
+}
+header {
+  display: grid;
+  grid-area: header;
+  place-content: center;
+  background-color: #000;
+  color: #0bf71b;
+}
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  background-color: #101010;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  background-color: #000;
+  padding: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+a {
+  text-align: center;
+  text-decoration: none;
+}
+main > a,
+form > button {
+  width: 30%;
+  text-align: center;
+  background-color: #000;
+  color: #0bf71b;
+  margin: 0 auto 0 auto;
+  padding: 2em;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+#new_username,
+#password,
+#repeat_password {
+  width: 50%;
+  background-color: #fff;
+  color: #000;
+  border: 0;
+  padding: 0.5em;
+}
+
+#new_username:focus,
+#password:focus,
+#repeat_password:focus {
+  outline: 0;
+}
+
+::selection {
+  background-color: #0bf71b;
+  color: #000;
+}
+
