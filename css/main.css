@@ -6,7 +6,9 @@ body {
 body * {
   font-family: "Fira Code", monospace;
 }
-
+h3 {
+  color: #0bf71b;
+}
 .container {
   display: grid;
   grid-template-columns: 4fr 1fr;
