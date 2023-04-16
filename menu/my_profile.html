@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog" />
+    <title>Mój profil</title>
+    <link rel="stylesheet" href="../css/my_profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css3?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Mój profil</h1></header>
+      <main>
+        <section>
+          <label for="about_me">O mnie:</label
+          ><textarea
+            name="about_me"
+            id="about_me"
+            cols="30"
+            rows="3"
+            name="about"
+          ></textarea>
+        </section>
+        <section>
+          <label for="username">Nazwa użytkownika:</label
+          ><input
+            type="text"
+            id="username"
+            placeholder="username"
+            readonly
+            name="username"
+          />
+        </section>
+        <section>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="email"
+            readonly
+            name="email"
+          />
+        </section>
+        <section>
+          <label for="birthday">Urodziny:</label
+          ><input
+            type="text"
+            id="birthday"
+            placeholder="01.01.2000"
+            readonly
+            name="birthday"
+          />
+        </section>
+        <section>
+          <label for="user_since">Użytkownik od:</label
+          ><input
+            type="text"
+            id="user_since"
+            placeholder="01.01.2016"
+            readonly
+            name="since"
+          />
+        </section>
+        <section>
+          <label for="added_posts">Dodane posty:</label>
+          <input
+            type="text"
+            id="added_posts"
+            placeholder="100"
+            readonly
+            name="added_posts"
+          />
+        </section>
+      </main>
+      <!-- menu -->
+      <aside>
+        <div><img src="../avatar.png" alt="avatar" /></div>
+        <h3>Nazwa użytkownika</h3>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="my_profile.html">Mój profil</a></li>
+            <li><a href="add_new_post.html">Dodaj nowy post</a></li>
+            <li><a href="posts.html">Posty</a></li>
+            <li><a href="settings/settings.html">Ustawienia</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- stopka -->
+      <footer><p>&copy; Pawel Kusznieruk</p></footer>
+    </div>
+  </body>
+</html>

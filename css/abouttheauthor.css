@@ -13,6 +13,7 @@ body * {
   grid-template-areas: "header header" "main aside" "footer footer";
   min-height: 100vh;
 }
+
 header {
   display: grid;
   grid-area: header;
@@ -22,36 +23,20 @@ header {
 }
 
 main {
-  grid-area: main;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  width: 70%;
+  justify-self: space-evenly;
   background-color: #101010;
   margin: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
-main > nav {
-  height: 100%;
-}
-
-main > nav > ul {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-main > nav > ul > li {
-  background-color: #101010;
-}
-
-main > nav > ul > li > a {
+p {
+  height: 90%;
+  font-size: 1.5em;
+  color: #0bf71b;
   background-color: #000;
-  padding: 1em;
+  margin: 15px;
+  padding: 15px;
 }
-
 aside {
   display: flex;
   flex-direction: column;
@@ -115,49 +100,10 @@ footer {
   color: #000;
 }
 
-section {
-  display: flex;
-  color: #0bf71b;
-}
-
 #header {
-  width: 70%;
-  margin-left: 1em;
+  width: 40%;
 }
 
 #content {
   width: 70%;
-}
-textarea {
-  margin-left: 1em;
-  font-size: 0.8em;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-}
-
-button {
-  width: 5em;
-  background-color: #000;
-  color: #0bf71b;
-  border: 0;
-  margin-left: 1em;
-  padding: 1em;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-label {
-  margin-left: 15px;
-}
-
-input:focus,
-textarea:focus {
-  outline: 0;
 }

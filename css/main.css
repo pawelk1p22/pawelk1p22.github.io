@@ -53,11 +53,15 @@ aside {
   margin: 15px;
 }
 
-aside > div {
+aside > div > img {
   width: 8em;
   height: 8em;
   border-radius: 50%;
   background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+aside > div {
   margin-left: auto;
   margin-right: auto;
 }

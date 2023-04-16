@@ -1,0 +1,78 @@
+body {
+  background-color: #181818;
+  margin: 0;
+}
+
+body * {
+  font-family: "Fira Code", monospace;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 150px auto 100px;
+  grid-template-areas: "header " "main " "footer ";
+  min-height: 100vh;
+}
+header {
+  display: grid;
+  grid-area: header;
+  place-content: center;
+  background-color: #000;
+  color: #0bf71b;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-self: space-evenly;
+  background-color: #101010;
+  width: 50%;
+  margin: 15px auto 15px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+form > * {
+  margin-top: 2em;
+}
+
+label {
+  font-size: 1.7em;
+  color: #0bf71b;
+}
+
+input {
+  width: 50%;
+  font-size: 1.5em;
+}
+
+input:focus {
+  outline: none;
+}
+
+footer {
+  display: grid;
+  grid-area: footer;
+  place-content: center;
+  background-color: #000;
+  color: #0bf71b;
+}
+
+::selection {
+  background-color: #0bf71b;
+  color: #000;
+}
+
+#header {
+  width: 40%;
+}
+
+#content {
+  width: 70%;
+}
